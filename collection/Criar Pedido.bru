@@ -1,0 +1,18 @@
+meta {
+  name: Criar Pedido
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:8085/pedidos
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "clienteNome": "Gabriel Couto",
+    "valorTotal": 150.50
+  }
+}
